@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cbot customer Asistant | Javascript Application</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="https://kit.fontawesome.com/9afece9275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+</head>
+<body> 
+    <!-- Modal for customers chatbot request -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-header">Request an app</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <form action="">
+                                <div class="input-group my-2">
+                                    <input type="email" placeholder="Enter your email" class="form-control">
+                                </div>
+                                <textarea name="message" id="" cols="30" class="form-control" placeholder="message" rows="2"></textarea>
+                                <button type="button" class="btn btn-info my-3">Request app</button>
+                            </form>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End of modal -->
+
+    <div class="content ">
+        <!-- Beggining of top section -->
+        <div class="top-section bg-info">             
+            <div class="container">
+                <div class="automation col-md-8 offset-md-2">Automation and BI</div>
+                <div class="row top-row my-5">                                
+                    <div class="header mt-5 col-md-3 offset-md-2">
+                        <img src="../static/images/Breat IT - Logo.png" alt=""> 
+                        <p class="border-left chatbot text-dark ml-2"><small ><Strong class="strong">Chatbots</Strong> in business context have grand capability to enhance business operstions excellency and proficienty</small></p>
+                    </div>
+                    <div class="col-md-5 mt-5">  
+                        <h3 class="pl-5">CBOT: Customer Assistant</h3>                      
+                        <p class="px-5 text-center mt-5">
+                            <strong class="strong">Business automation</strong><br>
+                             and business Intelligence is becoming a more popular strategy and a must-go-for idea to all businesses, big or small - it does't matter. <br>  <br>
+                            Automating reccuring opertaions and workflow using new technologies relieves over-reliance and expensive human labour <br>
+                            <br>                           
+                        
+                            <button type="button" data-target="#modal" data-toggle="modal" class="btn btn-success mt-4">Get a chatbot app</button>                         
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of top section -->
+
+        <!-- Body section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>What is business automation</h3>
+                    <p> Business automation is the process of using technologies to automate the manual, expensive and sometimes slow manual efforts. <br>
+                        <div class="figure">
+                            <img class="img-fluid figure-img" src="../static/images/bg.jpg" alt="">
+                            <figcaption class="figure-caption text-right">
+                                <h1 class="text-danger pr-2">Business automation</h1>
+                                <p class="text-white pr-2"><strong>Exploring and Utilizing</strong> <br><small>every automation and intelligence cababilities to outstrech business success limits</small></p>
+                            </figcaption>
+                        </div>
+                        Business automation is becoming a more popular strategy with many organizations ang companies due to its benefits of saving time and money in on manual works sich as: -      
+                        <ul class="list-group m-5">
+                            <li>Robot and convey belts in production repetative chores such as product packaging</li>
+                            <li>Social Media chatbots</li>
+                            <li>Employee onboarding automation softwares</li>
+                            <li>Purchase orders aotomation softwares</li>
+                            <li>Customers assitant Chatbots</li>
+                        </ul>
+                    </p>
+                    <p class="jumbotron">
+                        The sorry state of business automation is that a big percentage of business does not have any kind of process excellence or workflow automation. Sure, its not a surprice, but sad though, for a customer to mail a business assitant asking "I cant see the buy button" in an e-commerce site, then wait for two hours for "You must login first to buy" response. This is where a simple chatbot in any business website or mobile application can improve customers support and assistance in the most basic but crucial usability challenges faced by users using any site application hence ensuring customer satisfaction.
+                    </p>
+                    <!-- About Cbot Section -->
+                    <div class="row">                    
+                        <div class="col-md-6">
+                            <h3>What is Cbot</h3>
+                            <p class="pr-2">
+                                To ease th budden of customer assistance, chatbots are deployed ro serve that purpose and thats where CBot application comes to your rescue. CBot application is developed to atleast initiate sense automation to businesses to engange with users in a human-like conversation and to offer assistance around the clock.
+                            </p>
+                        </div>
+                        <div class="col-md-6">                                     
+                            <h3 class="pl-2">How do i get my CBOT app</h3>
+                            <p class="py-2 pl-2">
+                                For a customized application to meet your business context, click the button bellow.
+                                <button type="button" data-target="#modal" data-toggle="modal" class="btn btn-success mt-4 ">Get a chatbot app</button>
+                            </p> 
+                        </div>
+                    </div>
+                    <!-- end of about Section -->
+                </div>
+                
+            </div>
+        </div>
+        <!-- End of body section -->
+        <!-- Begin footer -->
+        <div class="bg-info">
+            <div class="container">
+                <div class="row">  
+                    <div class="col-md-4 offset-md-2 my-5"> 
+                        <h5 class="text-white mb-5">Chat with CBOT</h5>                    
+                        <div class="chatbox pr-5" id="chatbox">
+                            <p id="message_question" class="message_p text-light">
+                                
+                            </p>
+                            <p id="message_response" class="message_p text-right text-white">
+                                Hi! Chat with me today.
+                            </p>
+                        </div> 
+                        <div class="form-group pr-5">                                                
+                            <textarea name="message" id="message" rows="4" placeholder="Message" class="message form-control"></textarea>
+                        </div>
+                        <Button onclick="chat()" class="btn btn-white my-3">Send</Button>
+                    </div>
+                    <div class="col-md-4 my-5"> 
+                        <h5 class="text-white mb-5">Contact us</h5> 
+
+                        <!-- Social media accounts -->
+                        <a href="https://web.facebook.com/josephmwangi.jgm" target="_blank" rel="noopener noreferrer"><i class="fab icons fa-facebook-f" style="color:blue;"></i>  <span class="text-white"> Facebook </span> </a>   
+
+                        <i class="fas fa-envelope-square text-dark pl-2 "></i> <span class="text-white">icodemails@gmail.com</span> <br> <br>
+
+                        <a href="https://github.com/ambitiousjoseph" target="_blank" rel="noopener noreferrer"><i class="fab icons fa-github" style="color:blueviolet;"></i>  <span class="text-white">Github</span></a> 
+
+                        <a href="https://www.linkedin.com/in/joseph-mwangi-b991171a9" target="_blank" rel="noopener noreferrer"><i class="fab icons text-info ml-4 fa-linkedin-in"></i>  <span class="text-white">LinkedIn</span></a> 
+                        
+                        <!-- Contact form -->
+                        <div class="contact-form" id="contact_form">
+                            <button role="button" data-target="#comment-form" data-toggle="collapse" class="btn btn-primary my-3">send message</button>
+                            <form class="collapse" action="" id="comment-form" method="POST">
+                              <div class="form-group">
+                                  <label for="email" class="form-control-label">Enter your email</label>
+                                  <input type="email" name="email" id="email" class="form-control">
+                                <small id="emailHelp" class="form-text text-dark">Just provide a valid email !!</small>
+                              </div>
+                              <div class="form-group">
+                                <textarea name="message" id="" rows="2" placeholder="Message"class="form-control"></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Send message</button>
+                            </form>
+                        </div> 
+                        <!-- End of contact form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+        
+    </div>
+    <script src="../static/js/JQuery.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/app.js"></script>
+</body>
+</html>

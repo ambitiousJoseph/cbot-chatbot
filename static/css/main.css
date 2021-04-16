@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Poppins' Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+body, html{
+    width:100%;
+    height:100%;
+}
+.automation{
+    font-size: 45px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(15, 112, 192, 0.678);
+    border-left: rgba(255, 0, 140, 0.692) solid 20px;
+    border-top-left-radius: 20px;
+    top: 10px;
+}
+.top-section{
+    min-height: 500px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-image: url(../images/design.jpg);
+    background-repeat: no-repeat;
+}
+.header img{
+    width:98%;
+    margin: 10px auto;
+}
+.header{
+    background-color: #fff;
+    border-top-left-radius: 20%;
+}
+.strong{
+    font-size: 30px;
+    color: rgb(2, 39, 39);
+}
+.top-section p{
+    color: rgb(255, 255, 255);
+}
+.chatbot{
+    padding-left: 20px;
+    margin-bottom: 30px;
+    color: rgb(136, 16, 136);
+}
+.figure{
+    position: relative;
+}
+.figure img{
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.list-group{
+}
+.figure-caption{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border-right: solid white 3px;
+}
+@media (max-width:769px){
+    .top-section p{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .top-section{
+        min-height: 600px;
+    }
+    .automation{        
+        font-size: 27px;
+    }
+
+}
